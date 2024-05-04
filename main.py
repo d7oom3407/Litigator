@@ -2,6 +2,7 @@ import streamlit as st
 import spacy
 import openai
 
+openai.api_key = Nones # here goes the api key
 
 def chat_with_gpt(prompt):
     response = openai.ChatCompletion.create(
